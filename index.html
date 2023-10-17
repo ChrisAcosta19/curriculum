@@ -4,28 +4,31 @@
         <title>Curriculum</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <meta name="description" content="Esta página web muestra información sobre Curriculum Vitae de Christopher Acosta"/>
         <meta name="keywords" content="Computación, ESPOL, Python"/>
+        <meta name="description" content="Esta página web muestra información sobre Curriculum Vitae de Christopher Acosta"/>
         <meta name="author" content="Christopher Acosta Varela" />
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="stylesheets/style.css">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfu_7t62h0kPQ48pSGQtLJTxF_BcASelA"></script>
     </head>
+
     <body>
         <header>
             <h1>Currículum Vitae</h1>
         </header>
 
         <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Educación</a></li>
-                <li><a href="#">Experiencia</a></li>
-                <li><a href="#">Habilidades</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
+            <ol>
+                <li><a href="#informacion-personal">Contacto</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos Destacados</a></li>
+                <li><a href="formulario">Retroalimentación</a></li>
+            </ol>
         </nav>
 
         <section id="informacion-personal">
-            <h2>Información personal</h2>
+            <h2 class="subtitulo">Información personal</h2>
             <p>
                 Nombre: <span>Christopher Iván Acosta Varela</span>
             </p>
@@ -38,10 +41,10 @@
             <p>
                 Correo electrónico: <span>chriacos@espol.edu.ec</span>
             </p>
-
         </section>
-            <section id="educacion">
-            <h2>Educación</h2>
+
+        <section id="educacion">
+            <h2 class="subtitulo">Educación</h2>
             <p>
                 Grado: <span>Estudiante de Ingeniería en Computación</span>
             </p>
@@ -51,10 +54,28 @@
             <p>
                 Fechas: <span>2021 - Presente</span>
             </p>
+
+            <div id="map" style="width: 100%; height: 400px;"></div>
+            <script>
+                function initMap() {
+                  // Coordenadas del centro del mapa (por ejemplo, Nueva York)
+                  var center = { lat: -2.1476336079477587, lng: -79.96462304943513 };
+              
+                  // Opciones del mapa
+                  var mapOptions = {
+                    center: center,
+                    zoom: 16, // Nivel de zoom
+                  };
+              
+                  // Crear un nuevo mapa en el contenedor con ID "map"
+                  var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+                }
+                google.maps.event.addDomListener(window, 'load', initMap);
+              </script>
         </section>
 
         <section id="experiencia">
-            <h2>Experiencia</p>
+            <h2 class="subtitulo">Experiencia</p></h2>
             <p>
                 Cargo: <span>Aydante de Docencia</span>
             </p>
@@ -74,13 +95,67 @@
         </section>
 
         <section id="habilidades">
-            <h2>Habilidades</h2>
+            <h2 class="subtitulo">Habilidades</h2>
             <ul>
                 <li>Lenguajes de programación: Python, HTML, Java</li>
                 <li>Bases de datos: MySQL, PostgreSQL</li>
                 <li>Herramientas de desarrollo: Visual Studio Code, Git, NetBeans</li>
                 <li>Idiomas: Español, Inglés</li>
             </ul>
+        </section>
+
+        <section id ='proyectos'>
+            <h2 class="subtitulo">Proyectos destacados</h2>
+            
+            <p>
+                Los proyectos que más quiero destacar en mi etapa de estudiante de Ingeniería en Computación, son aquellos que realicé en la materia de Programarción Orientada a Objetos (POO).
+                En el Primer Parcial, se desarrolló un sistema de reservación de citas médicas. Cuenta con las opciones de Servicios, Empleados, Clientes, Citas, Atenciones y Salir. Se pueden listar, agregar, eliminar, editar Servicios, Empleados y Clientes. En cambio, se pueden agregar, consultar por fecha y eliminar citas. Por último, se pueden registrar y consultar atenciones. Para este proyecto, se usó el lenguaje Java por tener que hacer un sistema orientado a objetos.
+            </p>
+            <img src="images/SistemaCitas1.png" alt="Sistema de citas médicas por Consola"><br>
+            <a href="https://github.com/ChrisAcosta19/POO-P2-G04" target="_blank">Link del proyecto 1</a>
+
+            <p>
+                En el Segundo Parcial, se implementó la interfaz gráfica de usuario del proyecto del primer parcial. Para esto, se usó el conjunto de bibliotecas proporcionado por JavaFX porque ofrece muchas características que hacen que la creación de interfaces gráficas atractivas y funcionales sea más accesible para los desarrolladores. Además, se usaron hojas de estilo CSS para dar formato a las ventanas y a los elementos conforman la misma.
+            </p>
+            <img src="images/SistemaCitas2.png" alt="Sistema de citas médicas con JavaFX" width="520"><br>
+            <a href="https://github.com/ChrisAcosta19/POO-P2-G04-Parcial2" target="_blank">Link del proyecto 2</a>
+
+            <p>
+                A continuación, se mostrará un video con el programa en ejecución.
+            </p>
+            <video width="520" height="440" controls="yes">
+                <source src="media/video.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section id ='formulario'>
+            <h2 class="subtitulo">Retroalimentación</h2>
+            <form id="formulario">
+        
+                <label for="nombrescompletos">Nombres completos:</label> <input type="text" id="nombrescompletos" name="nombrescompletos" required="required" /><br>
+                <label for="correoelectronico">Correo electrónico:</label> <input type="email" id="correoelectronico" name="correoelectronico" required="required" /><br>
+                <label for="telefono">Teléfono:</label> <input type="text" id="telefono" name="telefono" required="required" /><br>
+                <label for="ciudad">Ciudad:</label> <input type="text" id="ciudad" name="ciudad" required="required" /><br>
+                <label for="pais">País:</label> <input type="text" id="pais" name="pais" required="required" /><br>
+
+                <label>Género:</label><br>
+                <input type="radio" id="femenino" name="genero" value="femenino">
+                <label for="femenino">Femenino</label><br>
+                <input type="radio" id="masculino" name="genero" value="masculino">
+                <label for="masculino">Masculino</label><br>
+                <input type="radio" id="noresponder" name="genero" value="noresponder" checked="checked">
+                <label for="noresponder">Prefiero no responder</label><br>
+                
+                <label for="fechanacimiento">Fecha de nacimiento:</label> <input type="date" id="fechanacimiento" name="fechanacimiento" required="required" /><br>
+                
+                <label for="puntuacion">Puntuación:</label> <input type="number" id="puntuacion" name="puntuacion" min="1" max="10" /><br>
+                
+                <label for="mensaje">Mensaje:</label> <textarea id="mensaje" name="mensaje" rows="10" cols="50"></textarea><br>
+                
+                <input type="checkbox" id="nosoyunrobot" value="nosoyunrobot"> <label for="nosoyunrobot">No soy un robot</label><br>
+                
+                <button type="submit" name="enviar">Enviar</button> <button type="reset" name="reiniciar">Cancelar</button>
+              </form>
         </section>
 
         <footer>

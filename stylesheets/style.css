@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+
+*{
+    font-family:Arial,sans-serif; 
+}
+
+.subtitulo{
+    font-family: 'Lora',TimesNewRoman,serif;
+}
+
+h1{
+    font-family: 'Montserrat',Georgia,serif;
+}
+
+#informacion-personal{
+    background-color:#f9f4ef;
+}
+
+section#habilidades ul{
+    color:#716040;
+}
+
+section {
+    margin: 2px 1px 1.5px;
+    margin-top: 0.8rem;
+    border: 1pt solid black;
+    padding: 2% 1.2%;  
+  }
