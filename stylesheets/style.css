@@ -14,16 +14,48 @@ h1{
 }
 
 #informacion-personal{
-    background-color:#f9f4ef;
+    background-color:#ca7826;
 }
 
-section#habilidades ul{
-    color:#716040;
+#informacion-personal p{
+    color:#fff3ec;
+}
+
+#educacion{
+    background-color:#28e447;
+}
+
+#educacion p{
+    color:#9b4f23;
+}
+
+#experiencia{
+    background-color:#d6ec10;
+}
+
+#habilidades{
+    background-color:#18bae2;
+}
+
+#habilidades ul{
+    color:#116409;
+}
+
+#proyectos{
+    background-color:#ee46bb;
+}
+
+#proyectos p{
+    color:#1aecec;
+}
+
+#formulario{
+    background-color:#c720dd;
 }
 
 section {
     margin: 2px 1px 1.5px;
     margin-top: 0.8rem;
     border: 1pt solid black;
-    padding: 2% 1.2%;  
-  }
+    padding: 2% 1.2%;
+}
