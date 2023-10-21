@@ -23,145 +23,166 @@
                 <li><a href="#experiencia">Experiencia</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#proyectos">Proyectos Destacados</a></li>
+                <li><a href="#idiomas">Idiomas</a></li>
+                <li><a href="#logros">Premios y Honores</a></li>
                 <li><a href="#formulario">Retroalimentación</a></li>
             </ol>
         </nav>
+        <main>
+            <section id="informacion-personal">
+                <h2 class="subtitulo">Información personal</h2>
+                <p>
+                    Nombre: <span>Christopher Iván Acosta Varela</span>
+                </p>
+                <p>
+                    Dirección: <span>Guayaquil, Ecuador</span>
+                </p>
+                <p>
+                    Teléfono: <span>+593 994 079 348</span>
+                </p>
+                <p>
+                    Correo electrónico: <span>chriacos@espol.edu.ec</span>
+                </p>
+            </section>
 
-        <section id="informacion-personal">
-            <h2 class="subtitulo">Información personal</h2>
-            <p>
-                Nombre: <span>Christopher Iván Acosta Varela</span>
-            </p>
-            <p>
-                Dirección: <span>Guayaquil, Ecuador</span>
-            </p>
-            <p>
-                Teléfono: <span>+593 994 079 348</span>
-            </p>
-            <p>
-                Correo electrónico: <span>chriacos@espol.edu.ec</span>
-            </p>
-        </section>
+            <section id="educacion">
+                <h2 class="subtitulo">Educación</h2>
+                <p>
+                    Grado: <span>Estudiante de Ingeniería en Computación</span>
+                </p>
+                <p>
+                    Institución: <span>Escuela Superior Politécnica del Litoral</span>
+                </p>
+                <p>
+                    Fechas: <span>2021 - Presente</span>
+                </p>
 
-        <section id="educacion">
-            <h2 class="subtitulo">Educación</h2>
-            <p>
-                Grado: <span>Estudiante de Ingeniería en Computación</span>
-            </p>
-            <p>
-                Institución: <span>Escuela Superior Politécnica del Litoral</span>
-            </p>
-            <p>
-                Fechas: <span>2021 - Presente</span>
-            </p>
+                <div id="map" style="width: 100%; height: 400px;"></div>
+                <script>
+                    function initMap() {
+                    // Coordenadas del centro del mapa (por ejemplo, Nueva York)
+                    var center = { lat: -2.1476336079477587, lng: -79.96462304943513 };
+                
+                    // Opciones del mapa
+                    var mapOptions = {
+                        center: center,
+                        zoom: 16, // Nivel de zoom
+                    };
+                
+                    // Crear un nuevo mapa en el contenedor con ID "map"
+                    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+                    }
+                    google.maps.event.addDomListener(window, 'load', initMap);
+                </script>
+            </section>
 
-            <div id="map" style="width: 100%; height: 400px;"></div>
-            <script>
-                function initMap() {
-                  // Coordenadas del centro del mapa (por ejemplo, Nueva York)
-                  var center = { lat: -2.1476336079477587, lng: -79.96462304943513 };
-              
-                  // Opciones del mapa
-                  var mapOptions = {
-                    center: center,
-                    zoom: 16, // Nivel de zoom
-                  };
-              
-                  // Crear un nuevo mapa en el contenedor con ID "map"
-                  var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-                }
-                google.maps.event.addDomListener(window, 'load', initMap);
-              </script>
-        </section>
+            <section id="experiencia">
+                <h2 class="subtitulo">Experiencia</p></h2>
+                <p>
+                    Cargo: <span>Ayudante de Docencia</span>
+                </p>
+                <p>
+                    Empresa: <span>Escuela Superior Politécnica del Litoral</span>
+                </p>
+                <p>
+                    Fechas: <span>2022 - Presente</span>
+                </p>
+                <p>
+                    Descripción:
+                    <ul>
+                        <li>Física Mecánica (II PAO 2022)</li>
+                        <li>Estadística para Ingenierías (II PAO 2023)</li>
+                    </ul>
+                </p>
+            </section>
 
-        <section id="experiencia">
-            <h2 class="subtitulo">Experiencia</p></h2>
-            <p>
-                Cargo: <span>Ayudante de Docencia</span>
-            </p>
-            <p>
-                Empresa: <span>Escuela Superior Politécnica del Litoral</span>
-            </p>
-            <p>
-                Fechas: <span>2022 - Presente</span>
-            </p>
-            <p>
-                Descripción:
+            <section id="habilidades">
+                <h2 class="subtitulo">Habilidades</h2>
                 <ul>
-                    <li>Física Mecánica (II PAO 2022)</li>
-                    <li>Estadística para Ingenierías (II PAO 2023)</li>
+                    <li>Lenguajes de programación: Python, HTML, Java</li>
+                    <li>Bases de datos: MySQL, PostgreSQL</li>
+                    <li>Herramientas de desarrollo: Visual Studio Code, Git, NetBeans</li>
+                    <li>Idiomas: Español, Inglés</li>
                 </ul>
-            </p>
-        </section>
+            </section>
 
-        <section id="habilidades">
-            <h2 class="subtitulo">Habilidades</h2>
-            <ul>
-                <li>Lenguajes de programación: Python, HTML, Java</li>
-                <li>Bases de datos: MySQL, PostgreSQL</li>
-                <li>Herramientas de desarrollo: Visual Studio Code, Git, NetBeans</li>
-                <li>Idiomas: Español, Inglés</li>
-            </ul>
-        </section>
+            <section id ='proyectos'>
+                <h2 class="subtitulo">Proyectos destacados</h2>
+                
+                <p>
+                    Los proyectos que más quiero destacar en mi etapa de estudiante de Ingeniería en Computación, son aquellos que realicé en la materia de Programarción Orientada a Objetos (POO).
+                    En el Primer Parcial, se desarrolló un sistema de reservación de citas médicas. Cuenta con las opciones de Servicios, Empleados, Clientes, Citas, Atenciones y Salir.
+                    Se pueden listar, agregar, eliminar, editar Servicios, Empleados y Clientes. En cambio, se pueden agregar, consultar por fecha y eliminar citas.
+                    Por último, se pueden registrar y consultar atenciones. Para este proyecto, se usó el lenguaje Java por tener que hacer un sistema orientado a objetos.
+                </p>
+                <img src="images/SistemaCitas1.png" alt="Sistema de citas médicas por Consola"><br>
+                <a href="https://github.com/ChrisAcosta19/POO-P2-G04" target="_blank">Link del proyecto 1</a>
 
-        <section id ='proyectos'>
-            <h2 class="subtitulo">Proyectos destacados</h2>
+                <p>
+                    En el Segundo Parcial, se implementó la interfaz gráfica de usuario del proyecto del primer parcial.
+                    Para esto, se usó el conjunto de bibliotecas proporcionado por JavaFX porque ofrece muchas características que hacen que la creación de interfaces gráficas atractivas y funcionales sea más accesible para los desarrolladores.
+                    Además, se usaron hojas de estilo CSS para dar formato a las ventanas y a los elementos conforman la misma.
+                    A continuación, se muestra la captura de la pantalla inicial y un video demostrativo.
+
+                    
+                </p>
+
+                <img src="images/SistemaCitas2.png" alt="Sistema de citas médicas con JavaFX" width="400">
+                <video width="400" height="320" controls="yes">
+                    <source src="media/video.mp4" type="video/mp4">
+                </video><br>
+
+                <a href="https://github.com/ChrisAcosta19/POO-P2-G04-Parcial2" target="_blank">Link del proyecto 2</a>
+            </section>
+
+            <section id="idiomas">
+                <h2 class="subtitulo">Idiomas</h2>
+                <ul>
+                    <li>Español (Lengua materna)</li>
+                    <li>Inglés (nivel B2)</li>
+                </ul>
+            </section>
+
+            <section id="logros">
+                <h2 class="subtitulo">Premios y honores</h2>
+                <ol>
+                    <li>Portaestandarte de la Bandera de la Ciudad - Periodo 2020-2021</li>
+                    <li>Certificación de Primer Puesto del 3° Año de Bachillerato</li>
+                    <li>Diploma de Honor al Primer Mejor Promedio de 2° Año Bachillerato</li>
+                    <li>Diploma de Honor al Mejor Promedio de 1° Año Bachillerato</li>
+                </ol>
+            </section>
+
+            <section id ='formulario'>
+                <h2 class="subtitulo">Retroalimentación</h2>
+                <form id="formulario">
             
-            <p>
-                Los proyectos que más quiero destacar en mi etapa de estudiante de Ingeniería en Computación, son aquellos que realicé en la materia de Programarción Orientada a Objetos (POO).
-                En el Primer Parcial, se desarrolló un sistema de reservación de citas médicas. Cuenta con las opciones de Servicios, Empleados, Clientes, Citas, Atenciones y Salir.
-                Se pueden listar, agregar, eliminar, editar Servicios, Empleados y Clientes. En cambio, se pueden agregar, consultar por fecha y eliminar citas.
-                Por último, se pueden registrar y consultar atenciones. Para este proyecto, se usó el lenguaje Java por tener que hacer un sistema orientado a objetos.
-            </p>
-            <img src="images/SistemaCitas1.png" alt="Sistema de citas médicas por Consola"><br>
-            <a href="https://github.com/ChrisAcosta19/POO-P2-G04" target="_blank">Link del proyecto 1</a>
+                    <label for="nombrescompletos">Nombres completos:</label> <input type="text" id="nombrescompletos" name="nombrescompletos" required="required" /><br>
+                    <label for="correoelectronico">Correo electrónico:</label> <input type="email" id="correoelectronico" name="correoelectronico" required="required" /><br>
+                    <label for="telefono">Teléfono:</label> <input type="text" id="telefono" name="telefono" required="required" /><br>
+                    <label for="ciudad">Ciudad:</label> <input type="text" id="ciudad" name="ciudad" required="required" /><br>
+                    <label for="pais">País:</label> <input type="text" id="pais" name="pais" required="required" /><br>
 
-            <p>
-                En el Segundo Parcial, se implementó la interfaz gráfica de usuario del proyecto del primer parcial.
-                Para esto, se usó el conjunto de bibliotecas proporcionado por JavaFX porque ofrece muchas características que hacen que la creación de interfaces gráficas atractivas y funcionales sea más accesible para los desarrolladores.
-                Además, se usaron hojas de estilo CSS para dar formato a las ventanas y a los elementos conforman la misma.
-                A continuación, se muestra la captura de la pantalla inicial y un video demostrativo.
-            </p>
-
-            <img src="images/SistemaCitas2.png" alt="Sistema de citas médicas con JavaFX" width="420">
-
-            <video width="420" height="340" controls="yes">
-                <source src="media/video.mp4" type="video/mp4">
-            </video><br>
-
-            <a href="https://github.com/ChrisAcosta19/POO-P2-G04-Parcial2" target="_blank">Link del proyecto 2</a>
-        </section>
-
-        <section id ='formulario'>
-            <h2 class="subtitulo">Retroalimentación</h2>
-            <form id="formulario">
-        
-                <label for="nombrescompletos">Nombres completos:</label> <input type="text" id="nombrescompletos" name="nombrescompletos" required="required" /><br>
-                <label for="correoelectronico">Correo electrónico:</label> <input type="email" id="correoelectronico" name="correoelectronico" required="required" /><br>
-                <label for="telefono">Teléfono:</label> <input type="text" id="telefono" name="telefono" required="required" /><br>
-                <label for="ciudad">Ciudad:</label> <input type="text" id="ciudad" name="ciudad" required="required" /><br>
-                <label for="pais">País:</label> <input type="text" id="pais" name="pais" required="required" /><br>
-
-                <label>Género:</label><br>
-                <input type="radio" id="femenino" name="genero" value="femenino">
-                <label for="femenino">Femenino</label><br>
-                <input type="radio" id="masculino" name="genero" value="masculino">
-                <label for="masculino">Masculino</label><br>
-                <input type="radio" id="noresponder" name="genero" value="noresponder" checked="checked">
-                <label for="noresponder">Prefiero no responder</label><br>
-                
-                <label for="fechanacimiento">Fecha de nacimiento:</label> <input type="date" id="fechanacimiento" name="fechanacimiento" required="required" /><br>
-                
-                <label for="puntuacion">Puntuación:</label> <input type="number" id="puntuacion" name="puntuacion" min="1" max="10" /><br>
-                
-                <label for="mensaje">Mensaje:</label> <textarea id="mensaje" name="mensaje" rows="10" cols="50"></textarea><br>
-                
-                <input type="checkbox" id="nosoyunrobot" value="nosoyunrobot"> <label for="nosoyunrobot">No soy un robot</label><br>
-                
-                <button type="submit" name="enviar">Enviar</button> <button type="reset" name="reiniciar">Cancelar</button>
-              </form>
-        </section>
-
+                    <label>Género:</label><br>
+                    <input type="radio" id="femenino" name="genero" value="femenino">
+                    <label for="femenino">Femenino</label><br>
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                    <label for="masculino">Masculino</label><br>
+                    <input type="radio" id="noresponder" name="genero" value="noresponder" checked="checked">
+                    <label for="noresponder">Prefiero no responder</label><br>
+                    
+                    <label for="fechanacimiento">Fecha de nacimiento:</label> <input type="date" id="fechanacimiento" name="fechanacimiento" required="required" /><br>
+                    
+                    <label for="puntuacion">Puntuación:</label> <input type="number" id="puntuacion" name="puntuacion" min="1" max="10" /><br>
+                    
+                    <label for="mensaje">Mensaje:</label> <textarea id="mensaje" name="mensaje" rows="10" cols="50"></textarea><br>
+                    
+                    <input type="checkbox" id="nosoyunrobot" value="nosoyunrobot"> <label for="nosoyunrobot">No soy un robot</label><br>
+                    
+                    <button type="submit" name="enviar">Enviar</button> <button type="reset" name="reiniciar">Cancelar</button>
+                </form>
+            </section>
+        </main>
         <footer>
             <p>Copyright © 2023 Christopher Acosta</p>
         </footer>
